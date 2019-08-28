@@ -42,7 +42,7 @@ public class A1Novice {
 		for (int i = 0; i < c; i++)
 		{
 			System.out.println( fnames[i].charAt(0) + ". " + lnames[i] 
-			+ " " + prices[i]);
+			+ ": " + prices[i]);
 		}
 		
 		
