@@ -8,7 +8,7 @@ public class A1Novice {
 		
 		Scanner scan = new Scanner(System.in);
 
-		System.out.println("Enter total number of customers.");
+		//enter number of custoemrs
 		int c = scan.nextInt();
 		
 		String[] fnames = new String[c];
@@ -19,15 +19,14 @@ public class A1Novice {
 		
 		for (int i = 0; i< c; i++)
 		{
-			System.out.println("Enter first name, last name,"
-					+ " and how many types of items");
+			//Enter first name, last name, and how many types of items
 			fnames[i] = scan.next();
 			lnames[i] = scan.next();
 			int num = scan.nextInt();
 			
 			for (int j = 0; j< num; j++)
 			{
-				System.out.println("put number of item, name of item, and price");
+				//enter number of that item, name, and price
 				int n = scan.nextInt();
 				
 				String item = scan.next();
