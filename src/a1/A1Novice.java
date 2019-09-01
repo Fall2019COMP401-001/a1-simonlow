@@ -33,19 +33,31 @@ public class A1Novice {
 				String item = scan.next();
 				
 				double p = scan.nextDouble();
-				ps[i]+= p*(double)n;
+				
+				double pt = p *1000;
+				ps[i]+= pt*(double)n;
 				
 				
 				
 						
 			}
-			int phun = (int)(ps[i]*100);
 			
 			
-			String pri = Integer.toString(phun);
+			
+			double phun = (ps[i]/10);
+			int phu = (int)Math.round(phun);
+			
+			
+			
+			
+			String pri = Integer.toString(phu);
 			String pric;
-			if (pri.length() < 3) {
-				pric = "." + pri;
+			
+			if(pri.length() == 1) {
+				pric = "0.0" + pri;
+			}
+			else if (pri.length() == 2) {
+				pric = "0." + pri;
 			}
 			else if (pri.length() == 3 ) 
 			{
